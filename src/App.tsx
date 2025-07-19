@@ -18,7 +18,7 @@ import Table from "./Table";
 
 const IMAGE_TYPES: ImageRow[] = [
 	{ type: "SVG", src: questSVG, alt: "quest", width: 24, height: 24, fileSizeInByte: 4*1024 },
-];
+].sort((a, b) => (a.fileSizeInByte - b.fileSizeInByte));
 
 const VITE_IMAGE_TYPES: ImageRow[] = [
 	{ type: "SVG", src: viteSvgLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 1*1024 },
@@ -35,7 +35,7 @@ const VITE_IMAGE_TYPES: ImageRow[] = [
 	{ type: "256x256 Minified PNG => WEBP", src: vite256MinWebpLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 4*1024 },
 	{ type: "256x256 OG PNG => WEBP", src: vite256OgWebpLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 4*1024 },
 
-];
+].sort((a, b) => (a.fileSizeInByte - b.fileSizeInByte));
 function App() {
 	return (
 		<>
