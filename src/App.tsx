@@ -1,6 +1,8 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import viteSvgLogo from "/vite.svg";
+import viteWebpLogo from "/vite.webp";
+import viteAvifLogo from "/vite.avif";
+import vitePngLogo from "/vite.png";
 import questSVG from "/icon/quest.svg";
 import quest24Png from "/icon/quest_24.png";
 import quest148Png from "/icon/quest_148.png";
@@ -15,14 +17,7 @@ function App() {
 
 	return (
 		<>
-			<div>
-				<a href="https://vite.dev" rel="noopener" target="_blank">
-					<img src={viteLogo} className="logo" alt="Vite logo" />
-				</a>
-				<a href="https://react.dev" rel="noopener" target="_blank">
-					<img src={reactLogo} className="logo react" alt="React logo" />
-				</a>
-			</div>
+			
 			<h1>Vite + React</h1>
 			<div className="card">
 				<button type="button" onClick={() => setCount((count) => count + 1)}>
@@ -37,6 +32,14 @@ function App() {
 				<img src={quest148x24TinifyPng} alt="png" height="24" width="24" />
 				<img src={quest148x24TinifyWebp} alt="webp" height="24" width="24" />
 				<img src={quest148x24TinifyAvif} alt="avif" height="24" width="24" />
+			</div>
+			<div className="flex">
+				<img src={viteSvgLogo} className="logo" alt="Vite logo" />
+				<img src={vitePngLogo} className="logo" alt="Vite logo" />
+				<img src={viteWebpLogo} className="logo" alt="Vite logo" />
+				<img src={viteAvifLogo} className="logo" alt="Vite logo" />
+				
+				
 			</div>
 		</>
 	);
