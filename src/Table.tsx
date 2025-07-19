@@ -4,7 +4,7 @@ export type ImageRow = {
     alt: string;
     width: number;
     height: number;
-    fileSize: string;
+    fileSizeInByte: number;
 }
 
 type TableProps = {
@@ -16,7 +16,7 @@ const Table = ({ images, tableKey }: TableProps) => <table>
         <tr>
             <th scope="col">Image type</th>
             <th scope="col">Image dimension</th>
-            <th scope="col">File size</th>
+            <th scope="col">File size (in bytes)</th>
             <th scope="col">Image</th>
         </tr>
     </thead>
@@ -25,7 +25,7 @@ const Table = ({ images, tableKey }: TableProps) => <table>
             <tr key={tableKey+"-"+index}>
                 <th scope="row">{image.type}</th>
                 <td>{image.width}x{image.height}</td>
-                <td>{image.fileSize}</td>
+                <td>{image.fileSizeInByte}</td>
                 <td>
                     <img src={image.src} alt={image.alt} height={image.height} width={image.width} loading="lazy" />
                 </td>
