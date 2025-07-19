@@ -28,11 +28,11 @@ function App() {
 			<hr />
 
 			<article>Using an SVG from figma</article>
-			<Table images={IMAGE_TYPES} key="figma" />
+			<Table images={IMAGE_TYPES} tableKey="figma" />
 			<br/>
 			<br/>
 			<article>Using an SVG from vite</article>
-			<Table images={VITE_IMAGE_TYPES} key="vite" />
+			<Table images={VITE_IMAGE_TYPES} tableKey="vite" />
 		</>
 	);
 }

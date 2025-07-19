@@ -9,9 +9,9 @@ export type ImageRow = {
 
 type TableProps = {
     images: ImageRow[];
-    key: string;
+    tableKey: string;
 }
-const Table = ({ images, key }: TableProps) => <table>
+const Table = ({ images, tableKey }: TableProps) => <table>
     <thead>
         <tr>
             <th scope="col">Image type</th>
@@ -22,7 +22,7 @@ const Table = ({ images, key }: TableProps) => <table>
     </thead>
     <tbody>
         {images.map((image, index) => (
-            <tr key={key+"-"+index}>
+            <tr key={tableKey+"-"+index}>
                 <th scope="row">{image.type}</th>
                 <td>{image.width}x{image.height}</td>
                 <td>{image.fileSize}</td>
