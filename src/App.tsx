@@ -37,8 +37,8 @@ const VITE_IMAGE_TYPES: ImageRow[] = [
 	{ type: "OG PNG", src: vite32OgPngLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 2830 },
 	{ type: "SVG", src: viteOgSvgLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 1497 },
 	{ type: "Minified PNG => WEBP", src: vite32MinWeboLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 754 },
-	{ type: "OG PNG => WEBP", src: vite32OgWebpLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 866 },
 	{ type: "OG PNG => WEBP (squooshed lossless 9)", src: vite32OgWebpSquooshedLogo, alt: "logo", width: 19,height: 32, fileSizeInByte: 976 },
+	{ type: "OG PNG => WEBP", src: vite32OgWebpLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 866 },
 ]
 .sort((a, b) => (a.fileSizeInByte - b.fileSizeInByte));
 
