@@ -17,6 +17,7 @@ const TableRow = ({ alt, fileSizeInByte, height, src, type, width }: TableRowPro
         <td>
             <img src={src} alt={alt} height={height} width={width} loading="lazy" />
         </td>
+        <td>{fileSizeInByte}</td>
     </tr>
 }
 
