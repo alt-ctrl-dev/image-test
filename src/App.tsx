@@ -13,7 +13,6 @@ import quest32MinPngLogo from "/icon/quest-32-min.png";
 import quest32OgPngLogo from "/icon/quest-32-og.png";
 import quest32MinWeboLogo from "/icon/quest-32-min.webp";
 import quest32OgWebpLogo from "/icon/quest-32-og.webp";
-import "./App.css";
 import { lazy } from "react";
 import type { ImageRow } from "./components/TableRow";
 const Table = lazy(() => import("./components/Table"));
