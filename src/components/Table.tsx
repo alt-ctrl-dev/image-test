@@ -1,5 +1,7 @@
+import { lazy } from "react";
 import type { ImageRow } from "./TableRow";
 
+const TableRow = lazy(() => import("./TableRow"));
 
 type TableProps = {
     images: ImageRow[];
@@ -15,15 +17,8 @@ const Table = ({ images, tableKey }: TableProps) => <table>
         </tr>
     </thead>
     <tbody>
-        {images.map((image, index) => (
-            <tr key={tableKey+"-"+index}>
-                <th scope="row">{image.type}</th>
-                <td>{image.width}x{image.height}</td>
-                <td>{image.fileSizeInByte}</td>
-                <td>
-                    <img src={image.src} alt={image.alt} height={image.height} width={image.width} loading="lazy" />
-                </td>
-            </tr>
+        {images.map((image,index) => (
+            <TableRow key={tableKey+index} {...image}/>
         ))}
     </tbody>
 </table>
