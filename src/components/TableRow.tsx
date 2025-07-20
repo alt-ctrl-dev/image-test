@@ -1,3 +1,6 @@
+import { lazy } from "react";
+const ImageHeaderInfo = lazy(() => import("./ImageHeaderInfo"));
+
 export type ImageRow = {
     type: string;
     src: string;
@@ -17,7 +20,7 @@ const TableRow = ({ alt, fileSizeInByte, height, src, type, width }: TableRowPro
         <td>
             <img src={src} alt={alt} height={height} width={width} loading="lazy" />
         </td>
-        <td>{fileSizeInByte}</td>
+        <ImageHeaderInfo src={src}/>
     </tr>
 }
 
