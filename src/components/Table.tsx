@@ -14,6 +14,7 @@ const Table = ({ images, tableKey }: TableProps) => <table>
             <th scope="col">Image dimension</th>
             <th scope="col">File size (in bytes)</th>
             <th scope="col">Image</th>
+            <th scope="col">Fetch Loaded</th>
         </tr>
     </thead>
     <tbody>
