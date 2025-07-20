@@ -5,7 +5,8 @@ import vite32MinPngLogo from "/logo/vite-32-min.png";
 import vite32OgPngLogo from "/logo/vite-32-og.png";
 import vite32MinWeboLogo from "/logo/vite-32-min.webp";
 import vite32OgWebpLogo from "/logo/vite-32-og.webp";
-import questSVG from "/icon/quest.svg";
+import questOgSVG from "/icon/quest-og.svg";
+import questMinSVG from "/icon/quest-min.svg";
 import quest32MinAvifLogo from "/icon/quest-32-min.avif";
 import quest32OgAvifLogo from "/icon/quest-32-og.avif";
 import quest32MinPngLogo from "/icon/quest-32-min.png";
@@ -19,11 +20,12 @@ import Table from "./Table";
 const LOGO_IMAGE_TYPES: ImageRow[] = [
 	{ type: "32x32 Minified PNG => AVIF", src: quest32MinAvifLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 1*1024 },
 	{ type: "32x32  OG PNG => AVIF", src: quest32OgAvifLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 1*1024 },
-	{ type: "32x32 Minified PNG", src: quest32MinPngLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 765 },
+	{ type: "32x32 Minified PNG", src: quest32MinPngLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 981 },
 	{ type: "32x32  OG PNG", src: quest32OgPngLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 2*1024 },
-	{ type: "SVG", src: questSVG, alt: "quest", width: 32, height: 32, fileSizeInByte: 4*1024 },
-	{ type: "32x32 Minified PNG => WEBP", src: quest32MinWeboLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 676 },
-	{ type: "32x32  OG PNG => WEBP", src: quest32OgWebpLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 874 },
+	{ type: "SVG Min", src: questMinSVG, alt: "logo", width: 32, height: 32, fileSizeInByte: 2*1024 },
+	{ type: "SVG OG", src: questOgSVG, alt: "logo", width: 32, height: 32, fileSizeInByte: 2*1024 },
+	{ type: "32x32 Minified PNG => WEBP", src: quest32MinWeboLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 570 },
+	{ type: "32x32  OG PNG => WEBP", src: quest32OgWebpLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 680 },
 ]
 .sort((a, b) => (a.fileSizeInByte - b.fileSizeInByte));
 
