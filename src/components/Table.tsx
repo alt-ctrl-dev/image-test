@@ -11,7 +11,6 @@ const Table = ({ images, tableKey }: TableProps) => <table>
     <thead>
         <tr>
             <th scope="col">Image type</th>
-            <th scope="col">Image dimension</th>
             <th scope="col">File size (in bytes)</th>
             <th scope="col">Image</th>
             <th scope="col">Image Content Encoding Header</th>

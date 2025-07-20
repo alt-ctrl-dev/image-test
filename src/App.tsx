@@ -19,26 +19,26 @@ import type { ImageRow } from "./components/TableRow";
 const Table = lazy(() => import("./components/Table"));
 
 const LOGO_IMAGE_TYPES: ImageRow[] = [
-	{ type: "32x32 Minified PNG => AVIF", src: quest32MinAvifLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 1001 },
-	{ type: "32x32  OG PNG => AVIF", src: quest32OgAvifLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 1051 },
-	{ type: "32x32 Minified PNG", src: quest32MinPngLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 981 },
-	{ type: "32x32  OG PNG", src: quest32OgPngLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 1898 },
+	{ type: "Minified PNG => AVIF", src: quest32MinAvifLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 1001 },
+	{ type: "OG PNG => AVIF", src: quest32OgAvifLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 1051 },
+	{ type: "Minified PNG", src: quest32MinPngLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 981 },
+	{ type: "OG PNG", src: quest32OgPngLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 1898 },
 	{ type: "SVG Min", src: questMinSVG, alt: "logo", width: 32, height: 32, fileSizeInByte: 2413 },
 	{ type: "SVG OG", src: questOgSVG, alt: "logo", width: 32, height: 32, fileSizeInByte: 2413 },
-	{ type: "32x32 Minified PNG => WEBP", src: quest32MinWeboLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 570 },
-	{ type: "32x32  OG PNG => WEBP", src: quest32OgWebpLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 680 },
+	{ type: "Minified PNG => WEBP", src: quest32MinWeboLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 570 },
+	{ type: "OG PNG => WEBP", src: quest32OgWebpLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 680 },
 ]
 .sort((a, b) => (a.fileSizeInByte - b.fileSizeInByte));
 
 const VITE_IMAGE_TYPES: ImageRow[] = [
-	{ type: "32x32 Minified PNG => AVIF", src: vite32MinAvifLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 1239 },
-	{ type: "32x32  OG PNG => AVIF", src: vite32OgAvifLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 1333 },
-	{ type: "32x32 Minified PNG", src: vite32MinPngLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 1621 },
-	{ type: "32x32  OG PNG", src: vite32OgPngLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 2830 },
+	{ type: "Minified PNG => AVIF", src: vite32MinAvifLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 1239 },
+	{ type: "OG PNG => AVIF", src: vite32OgAvifLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 1333 },
+	{ type: "Minified PNG", src: vite32MinPngLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 1621 },
+	{ type: "OG PNG", src: vite32OgPngLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 2830 },
 	{ type: "SVG OG", src: viteOgSvgLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 1497 },
 	{ type: "SVG Minified", src: viteMinSvgLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 1267 },
-	{ type: "32x32 Minified PNG => WEBP", src: vite32MinWeboLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 754 },
-	{ type: "32x32  OG PNG => WEBP", src: vite32OgWebpLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 866 },
+	{ type: "Minified PNG => WEBP", src: vite32MinWeboLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 754 },
+	{ type: "OG PNG => WEBP", src: vite32OgWebpLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 866 },
 ]
 .sort((a, b) => (a.fileSizeInByte - b.fileSizeInByte));
 

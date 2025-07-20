@@ -15,7 +15,6 @@ type TableRowProps = ImageRow
 const TableRow = ({ alt, fileSizeInByte, height, src, type, width }: TableRowProps) => {
     return <tr>
         <th scope="row">{type}</th>
-        <td>{width}x{height}</td>
         <td>{fileSizeInByte}</td>
         <td>
             <img src={src} alt={alt} height={height} width={width} loading="lazy" />
