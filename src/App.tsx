@@ -50,15 +50,15 @@ function App() {
 		<>
 			<hgroup>
 				<h1>Image test</h1>
-				<p>How different images work with compression on a Website?</p>
+				<p>How different images work with compression on a SPA</p>
 			</hgroup>
 			<hr />
 
-			<article>Using an SVG from figma</article>
+			<article><strong>Using an SVG from <mark>figma</mark></strong></article>
 			<Table images={LOGO_IMAGE_TYPES} tableKey="figma" />
 			<br/>
 			<br/>
-			<article>Using an SVG from vite</article>
+			<article><strong>Using an SVG using <mark>minimun strokes</mark></strong></article>
 			<Table images={VITE_IMAGE_TYPES} tableKey="vite" />
 		</>
 	);
