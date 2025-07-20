@@ -5,6 +5,7 @@ import vite32MinPngLogo from "/logo/vite-32-min.png";
 import vite32OgPngLogo from "/logo/vite-32-og.png";
 import vite32MinWeboLogo from "/logo/vite-32-min.webp";
 import vite32OgWebpLogo from "/logo/vite-32-og.webp";
+import vite32OgWebpSquooshedLogo from "/logo/vite-32-og-squooshed.webp";
 import questOgSVG from "/icon/quest-og.svg";
 import quest32MinAvifLogo from "/icon/quest-32-min.avif";
 import quest32OgAvifLogo from "/icon/quest-32-og.avif";
@@ -37,6 +38,7 @@ const VITE_IMAGE_TYPES: ImageRow[] = [
 	{ type: "SVG", src: viteOgSvgLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 1497 },
 	{ type: "Minified PNG => WEBP", src: vite32MinWeboLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 754 },
 	{ type: "OG PNG => WEBP", src: vite32OgWebpLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 866 },
+	{ type: "OG PNG => WEBP (squooshed lossless 9)", src: vite32OgWebpSquooshedLogo, alt: "logo", width: 19,height: 32, fileSizeInByte: 976 },
 ]
 .sort((a, b) => (a.fileSizeInByte - b.fileSizeInByte));
 
