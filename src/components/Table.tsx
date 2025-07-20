@@ -1,11 +1,5 @@
-export type ImageRow = {
-    type: string;
-    src: string;
-    alt: string;
-    width: number;
-    height: number;
-    fileSizeInByte: number;
-}
+import type { ImageRow } from "./TableRow";
+
 
 type TableProps = {
     images: ImageRow[];

@@ -14,9 +14,9 @@ import quest32OgPngLogo from "/icon/quest-32-og.png";
 import quest32MinWeboLogo from "/icon/quest-32-min.webp";
 import quest32OgWebpLogo from "/icon/quest-32-og.webp";
 import "./App.css";
-import type { ImageRow } from "./Table";
 import { lazy } from "react";
-const Table = lazy(() => import("./Table"));
+import type { ImageRow } from "./components/TableRow";
+const Table = lazy(() => import("./components/Table"));
 
 const LOGO_IMAGE_TYPES: ImageRow[] = [
 	{ type: "32x32 Minified PNG => AVIF", src: quest32MinAvifLogo, alt: "logo", width: 32, height: 32, fileSizeInByte: 1*1024 },
