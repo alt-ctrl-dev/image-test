@@ -18,8 +18,7 @@ const ImageHeaderInfo = ({ src }: { src: string }) => {
         errorRetryCount: 1, 
         revalidateIfStale: false, 
         revalidateOnFocus: false, 
-        revalidateOnReconnect: false,
-        revalidateOnMount: false
+        revalidateOnReconnect: false
      })
     if (error) return <td colSpan={2}>failed to load</td>
     if (isLoading) return <td colSpan={2}>loading...</td>
