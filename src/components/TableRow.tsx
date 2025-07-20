@@ -5,7 +5,7 @@ export type ImageRow = {
     type: string;
     src: string;
     alt: string;
-    width: number;
+    width?: number;
     height: number;
     fileSizeInByte: number;
 }
