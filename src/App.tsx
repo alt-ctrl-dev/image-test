@@ -20,15 +20,15 @@ import type { ImageRow } from "./components/TableRow";
 const Table = lazy(() => import("./components/Table"));
 
 const LOGO_IMAGE_TYPES: ImageRow[] = [
-	{ type: "Minified PNG => AVIF", src: quest32MinAvifLogo, alt: "logo" , height: 32, fileSizeInByte: 1001 },
-	{ type: "OG PNG => AVIF", src: quest32OgAvifLogo, alt: "logo" , height: 32, fileSizeInByte: 1051 },
-	{ type: "Minified PNG", src: quest32MinPngLogo, alt: "logo" , height: 32, fileSizeInByte: 981 },
+	{ type: "Minified PNG => AVIF", src: quest32MinAvifLogo, alt: "logo" , width: 19,height: 32, fileSizeInByte: 1001 },
+	{ type: "OG PNG => AVIF", src: quest32OgAvifLogo, alt: "logo" , width: 19,height: 32, fileSizeInByte: 1051 },
+	{ type: "Minified PNG", src: quest32MinPngLogo, alt: "logo" , width: 19,height: 32, fileSizeInByte: 981 },
 	{ type: "OG PNG", src: quest32OgPngLogo, alt: "logo", height: 32, fileSizeInByte: 1898 },
-	{ type: "SVG Min", src: questMinSVG, alt: "logo", height: 32, fileSizeInByte: 2413 },
-	{ type: "SVG OG", src: questOgSVG, alt: "logo", height: 32, fileSizeInByte: 2413 },
-	{ type: "Minified PNG => WEBP", src: quest32MinWeboLogo, alt: "logo", height: 32, fileSizeInByte: 570 },
-	{ type: "OG PNG => WEBP", src: quest32OgWebpLogo, alt: "logo", height: 32, fileSizeInByte: 680 },
-	{ type: "OG PNG => WEBP (squooshed lossless 9)", src: quest32OgWebpSquooshedLogo, alt: "logo", height: 32, fileSizeInByte: 976 },
+	{ type: "SVG Min", src: questMinSVG, alt: "logo", width: 19, height: 32, fileSizeInByte: 2413 },
+	{ type: "SVG OG", src: questOgSVG, alt: "logo", width: 19,height: 32, fileSizeInByte: 2413 },
+	{ type: "Minified PNG => WEBP", src: quest32MinWeboLogo, alt: "logo", width: 19,height: 32, fileSizeInByte: 570 },
+	{ type: "OG PNG => WEBP", src: quest32OgWebpLogo, alt: "logo", width: 19,height: 32, fileSizeInByte: 680 },
+	{ type: "OG PNG => WEBP (squooshed lossless 9)", src: quest32OgWebpSquooshedLogo, alt: "logo", width: 19,height: 32, fileSizeInByte: 976 },
 ]
 .sort((a, b) => (a.fileSizeInByte - b.fileSizeInByte));
 
